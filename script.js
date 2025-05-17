@@ -1,9 +1,23 @@
-async function convert() {
-  const amount = document.getElementById('amount').value;
-  const toCurrency = document.getElementById('toCurrency').value;
-  const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=' + toCurrency);
-  const data = await response.json();
-  const rate = data.bitcoin[toCurrency];
-  const result = amount * rate;
-  document.getElementById('result').textContent = result.toFixed(2) + ' ' + toCurrency.toUpperCase();
+
+function convert() {
+  const amount = parseFloat(document.getElementById("amount").value);
+  const from = document.getElementById("fromCurrency").value;
+  const to = document.getElementById("toCurrency").value;
+  const result = document.getElementById("result");
+  if (isNaN(amount)) {
+    result.textContent = "Please enter a valid number";
+    return;
+  }
+  // Dummy rates for example purposes
+  const rates = {
+    BTC: { USD: 65000, ETH: 15 },
+    ETH: { USD: 3500, BTC: 0.067 },
+    USDT: { USD: 1, BTC: 0.000015 },
+  };
+  const rate = rates[from] && rates[from][to];
+  if (rate) {
+    result.textContent = `${amount} ${from} = ${(amount * rate).toFixed(4)} ${to}`;
+  } else {
+    result.textContent = "Conversion not available";
+  }
 }
