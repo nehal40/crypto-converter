@@ -1,26 +1,59 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>Crypto Converter </title>
-    <meta name="description" content="حوّل العملات الرقمية مثل البيتكوين إلى دولار أو يورو أو ريال سعودي في لحظة.">
-    <meta name="keywords" content="تحويل بيتكوين, عملات رقمية, BTC to USD, Crypto Converter, محول عملات">
-    <meta name="author" content="nehal">
-    <link rel="stylesheet" href="style.css">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>محول العملات الرقمية | GetConvertive</title>
+  <meta name="description" content="استخدم GetConvertive لتحويل العملات الرقمية مثل Bitcoin وEthereum وUSDT بسرعة وسهولة مع نصائح مالية لتحقيق أرباح رقمية.">
+  <meta name="keywords" content="محول العملات الرقمية, تحويل BTC, Ethereum, USDT, أرباح العملات الرقمية, استثمار العملات, شراء بيتكوين">
+  <meta name="author" content="GetConvertive" />
+  <link rel="canonical" href="https://getconvertive.com/" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Cryptocurrency Converter</h1>
-    <input type="number" id="amount" placeholder="Amount in BTC">
-    <select id="toCurrency">
-      <option value="usd">USD</option>
-      <option value="eur">EUR</option>
-      <option value="sar">SAR</option>
-    </select>
-    <button onclick="convert()">Convert</button>
-    <p id="result"></p>
-  </div>
+  <header>
+    <h1>محول العملات الرقمية</h1>
+    <nav>
+      <a href="articles/best-usdt-wallet.html">أفضل محافظ USDT</a> |
+      <a href="articles/how-to-convert-btc-to-usdt.html">تحويل BTC إلى USDT</a> |
+      <a href="articles/earn-crypto-without-adsense.html">اربح بدون AdSense</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>ابدأ الآن في تحويل العملات الرقمية بأمان وسرعة</h2>
+      <form id="converter">
+        <input type="number" id="amount" placeholder="أدخل المبلغ" required />
+        <select id="fromCurrency">
+          <option value="BTC">Bitcoin</option>
+          <option value="ETH">Ethereum</option>
+          <option value="USDT">Tether</option>
+        </select>
+        إلى
+        <select id="toCurrency">
+          <option value="USDT">Tether</option>
+          <option value="BTC">Bitcoin</option>
+          <option value="ETH">Ethereum</option>
+        </select>
+        <button type="submit">تحويل</button>
+      </form>
+      <div id="result"></div>
+    </section>
+    <section>
+      <h3>طرق ذكية للربح من موقعك:</h3>
+      <ul>
+        <li>الترويج لمنصات تداول العملات الرقمية بعمولة (Affiliate).</li>
+        <li>بيع كتب إلكترونية أو كورسات عن التشفير.</li>
+        <li>إعلانات مباشرة مع شركات متخصصة.</li>
+        <li>جمع البريد الإلكتروني لعمل حملات تسويق رقمي.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 GetConvertive</p>
+    <p><a href="privacy.html">سياسة الخصوصية</a> | <a href="contact.html">اتصل بنا</a></p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
