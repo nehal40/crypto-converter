@@ -1,23 +1,16 @@
-
 function convert() {
   const amount = parseFloat(document.getElementById("amount").value);
   const from = document.getElementById("fromCurrency").value;
   const to = document.getElementById("toCurrency").value;
-  const result = document.getElementById("result");
-  if (isNaN(amount)) {
-    result.textContent = "Please enter a valid number";
-    return;
-  }
-  // Dummy rates for example purposes
-  const rates = {
-    BTC: { USD: 65000, ETH: 15 },
-    ETH: { USD: 3500, BTC: 0.067 },
-    USDT: { USD: 1, BTC: 0.000015 },
-  };
-  const rate = rates[from] && rates[from][to];
-  if (rate) {
-    result.textContent = `${amount} ${from} = ${(amount * rate).toFixed(4)} ${to}`;
-  } else {
-    result.textContent = "Conversion not available";
-  }
+  let rate = 1;
+
+  if (from === "BTC" && to === "USD") rate = 65000;
+  else if (from === "ETH" && to === "USD") rate = 3500;
+  else if (from === "USDT" && to === "USD") rate = 1;
+  else if (from === "BTC" && to === "EUR") rate = 60000;
+  else if (from === "ETH" && to === "EUR") rate = 3200;
+  else if (from === "BTC" && to === "SAR") rate = 243000;
+  else rate = 1;
+
+  document.getElementById("result").innerText = `Result: ${(amount * rate).toFixed(2)} ${to}`;
 }
