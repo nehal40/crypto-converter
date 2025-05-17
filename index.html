@@ -1,58 +1,39 @@
-
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>محول العملات الرقمية | GetConvertive</title>
-  <meta name="description" content="استخدم GetConvertive لتحويل العملات الرقمية مثل Bitcoin وEthereum وUSDT بسرعة وسهولة مع نصائح مالية لتحقيق أرباح رقمية.">
-  <meta name="keywords" content="محول العملات الرقمية, تحويل BTC, Ethereum, USDT, أرباح العملات الرقمية, استثمار العملات, شراء بيتكوين">
-  <meta name="author" content="GetConvertive" />
-  <link rel="canonical" href="https://getconvertive.com/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Convert cryptocurrencies instantly. Simple, fast, and secure.">
+  <meta name="keywords" content="crypto converter, bitcoin to usd, ethereum exchange, usdt, btc, getconvertive">
+  <meta name="author" content="getconvertive.com">
+  <title>Crypto Converter - GetConvertive</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>محول العملات الرقمية</h1>
-    <nav>
-      <a href="articles/best-usdt-wallet.html">أفضل محافظ USDT</a> |
-      <a href="articles/how-to-convert-btc-to-usdt.html">تحويل BTC إلى USDT</a> |
-      <a href="articles/earn-crypto-without-adsense.html">اربح بدون AdSense</a>
-    </nav>
+    <h1>Crypto Converter</h1>
+    <p>Convert your favorite cryptocurrencies in seconds</p>
   </header>
   <main>
     <section>
-      <h2>ابدأ الآن في تحويل العملات الرقمية بأمان وسرعة</h2>
-      <form id="converter">
-        <input type="number" id="amount" placeholder="أدخل المبلغ" required />
-        <select id="fromCurrency">
-          <option value="BTC">Bitcoin</option>
-          <option value="ETH">Ethereum</option>
-          <option value="USDT">Tether</option>
-        </select>
-        إلى
-        <select id="toCurrency">
-          <option value="USDT">Tether</option>
-          <option value="BTC">Bitcoin</option>
-          <option value="ETH">Ethereum</option>
-        </select>
-        <button type="submit">تحويل</button>
-      </form>
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <select id="fromCurrency">
+        <option value="BTC">BTC</option>
+        <option value="ETH">ETH</option>
+        <option value="USDT">USDT</option>
+      </select>
+      to
+      <select id="toCurrency">
+        <option value="USD">USD</option>
+        <option value="BTC">BTC</option>
+        <option value="ETH">ETH</option>
+      </select>
+      <button onclick="convert()">Convert</button>
       <div id="result"></div>
-    </section>
-    <section>
-      <h3>طرق ذكية للربح من موقعك:</h3>
-      <ul>
-        <li>الترويج لمنصات تداول العملات الرقمية بعمولة (Affiliate).</li>
-        <li>بيع كتب إلكترونية أو كورسات عن التشفير.</li>
-        <li>إعلانات مباشرة مع شركات متخصصة.</li>
-        <li>جمع البريد الإلكتروني لعمل حملات تسويق رقمي.</li>
-      </ul>
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 GetConvertive</p>
-    <p><a href="privacy.html">سياسة الخصوصية</a> | <a href="contact.html">اتصل بنا</a></p>
+    <p>&copy; 2025 GetConvertive. All rights reserved.</p>
   </footer>
   <script src="script.js"></script>
 </body>
