@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Convert cryptocurrencies instantly. Simple, fast, and secure.">
-  <meta name="keywords" content="crypto converter, bitcoin to usd, ethereum exchange, usdt, btc, getconvertive">
-  <meta name="author" content="getconvertive.com">
-  <title>Crypto Converter - GetConvertive</title>
+  <meta name="description" content="Convert currencies instantly with GetConvertive. Fast, accurate, and easy-to-use crypto converter.">
+  <meta name="keywords" content="crypto converter, bitcoin to usd, eth to btc, currency converter">
+  <meta name="author" content="GetConvertive Team">
+  <title>GetConvertive | Crypto Converter</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Crypto Converter</h1>
-    <p>Convert your favorite cryptocurrencies in seconds</p>
+    <h1>GetConvertive</h1>
+    <p>Instant Digital Currency Converter</p>
   </header>
   <main>
     <section>
+      <label for="amount">Amount:</label>
       <input type="number" id="amount" placeholder="Enter amount" />
       <select id="fromCurrency">
         <option value="BTC">BTC</option>
         <option value="ETH">ETH</option>
         <option value="USDT">USDT</option>
       </select>
-      to
+      <span>to</span>
       <select id="toCurrency">
         <option value="USD">USD</option>
-        <option value="BTC">BTC</option>
-        <option value="ETH">ETH</option>
+        <option value="EUR">EUR</option>
+        <option value="SAR">SAR</option>
       </select>
       <button onclick="convert()">Convert</button>
-      <div id="result"></div>
+      <p id="result"></p>
     </section>
   </main>
   <footer>
