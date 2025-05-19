@@ -1,1 +1,25 @@
-<html><head><title>Contact</title></head><body><h1>Contact Us</h1><p>Email: nehalhasan511@gmail.com </p></body></html>
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>اتصل بنا - GetConvertive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>اتصل بفريق GetConvertive</h1></header>
+  <main>
+    <form>
+      <label>الاسم:</label><br>
+      <input type="text" name="name"><br><br>
+      <label>البريد الإلكتروني:</label><br>
+      <input type="email" name="email"><br><br>
+      <label>الرسالة:</label><br>
+      <textarea name="message" rows="5" cols="30"></textarea><br><br>
+      <input type="submit" value="إرسال">
+    </form>
+    <p>أو تواصل معنا عبر واتساب: <strong>+967772973567</strong></p>
+  </main>
+  <footer><p>جميع الحقوق محفوظة &copy; GetConvertive 2025</p></footer>
+</body>
+</html>
